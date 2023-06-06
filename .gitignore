@@ -1,4 +1,3 @@
-data
 .cache
 .config
 .conda/
@@ -17,4 +16,3 @@ __init__.py
 .idea/
 /venv/
 __pycache__
-models_pretrained
