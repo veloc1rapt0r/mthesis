@@ -1,0 +1,3 @@
+filename,liver_segmentation,liver_visible,lesion_segmentation,lesion_visible
+volume-100_0.png,segmentation-100_livermask_0.png,False,segmentation-100_lesionmask_0.png,False
+volume-100_1.png,segmentation-100_livermask_1.png,False,segmentation-100_lesionmask_1.png,False
