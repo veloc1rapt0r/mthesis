@@ -2,7 +2,7 @@
 
 This repository contains code examples related to Oleh Bakumenko's master thesis conducted at the Faculty of Mathematics, University of Duisburg-Essen. 
 The thesis focuses on the implementation and evaluation of various classification and segmentation models for the analysis of liver CT scans.
-The presented models in the thesis include: AlexNet, ResNet18, ResNet34, ResNet50, ResNet152, VGG19, and U-Net. Please refer to the PDF directory and the References section for more information about these models.
+The presented models in the thesis include: AlexNet, ResNet18, ResNet34, ResNet50, ResNet152, VGG19, and U-Net. Please refer to the PDF directory and the References section in the thesis for more information about these models.
 
 ### Folder Structure and Descriptions:
 - code: This folder contains the scripts for model definitions and performance comparison.
