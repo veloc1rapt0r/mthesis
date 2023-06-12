@@ -208,13 +208,9 @@ def plot_image_model_subplot(tensor_image,tensor_target,model,device,cmap = "bon
 
 
 def plot_Img_Targets(tensor_image_in, targets, cmap = 'bone'):
-    '''
-    Plot a subplot:     [image  target liver    target cancer]
-    :param tensor_image_in:
-    :param targets:
-    :param cmap:
-    :return:
-    '''
+    """
+    Plot a subplot:     [image      target liver        target cancer]
+    """
     plt.subplot(1, 3, 1)
     tensor_image = tensor_image_in.to('cpu')
     array_image = uu.convert_tensor_to_opencv_array(tensor_image)
@@ -239,12 +235,9 @@ def plot_Img_Targets(tensor_image_in, targets, cmap = 'bone'):
     plt.show()
 
 def plot_Img_Contour(tensor_image_in, targets):
-    '''
-    Plots the input image and target contours
-    :param tensor_image_in:
-    :param targets:
-    '''
-
+    """
+        Plots the input image and target segmentation contours, liver in green and cancer in red.
+    """
     tensor_image = tensor_image_in.to('cpu')
     liver = np.array(targets[0].squeeze().detach().numpy(), dtype = np.uint8)
     tumors = np.array(targets[1].squeeze().detach().numpy(), dtype = np.uint8)
