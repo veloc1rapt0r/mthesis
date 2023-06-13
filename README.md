@@ -14,6 +14,9 @@ The presented models in the thesis include: AlexNet, ResNet18, ResNet34, ResNet5
   - _train: Train loss saved for each batch number in each epoch.
   - _runtime: Runtime of each epoch in seconds.
 - utility: This folder consists of utility files for creating datasets, logging routines, calculation of train/val/test losses, performance metrics, plotting routines, generalized train loop, and more.
+- data: The dataset folder only includes the test set used for plotting examples. Loading the whole dataset requires too much space. 
+- models_pretrained: Contains the weights for the U-Net model to generate Figure 25 from the thesis. 
+- pdf: Stores the digital version of the thesis in PDF format.
 
 The one can start with /code/plots_and_graphs.ipynb notebook, as it contains all the classification and segmentation performance comparison, described in details in Section 5 of the thesis.
 The notebook uses pandas dataframes, such that the reader can easily reach needed information using names of the model as keywords. 
@@ -25,18 +28,20 @@ Google Colab, also known as "Colaboratory," provides a browser-based Python envi
 To use Colab, you need to sign in with your Google account to access its computational resources. 
 GitHub copy of this project was needed, so it was created in:
 https://github.com/veloc1rapt0r/mthesis.git
-To use colab the one needs:
+To use colab:
 1. Go to https://research.google.com/colaboratory/
 2. In the menu above choose File-> Open notebook -> GitHub
 3. Enter a GitHub URL https://github.com/veloc1rapt0r/mthesis.git
 4. Choose the "mthesis" repository and the "main" branch.
 5. Select the desired file from the list, for example as "code/plots_and_graphs.ipynb."
-6. After the file is opened in a new window, navigate through directories using change directory (cd) or list files (ls) commands or paste as separate cells:
-  
+6. After the file is opened in a new window, clone the project from University of Duisburg-Essen Git using:
+
   !git clone https://git.uni-due.de/skolbaku/residual-neural-networks-for-medical-image-processing-a-case-study-in-liver-cancer-diagnostics.git
-  
+
+7. Navigate through directories using change directory (cd) or list files (ls) commands or paste these two commands as separate cells before the cell with import statements:
+
   cd residual-neural-networks-for-medical-image-processing-a-case-study-in-liver-cancer-diagnostics/code
   
   ls
 
-7. Make sure that the file you want to open is displayed in the list of files. Failure to do so may result in certain generalized functions not working correctly, for example as importing logs.  
+8. Make sure, that the file you want to open is displayed in the list of files. Failure to do so may result in certain generalized functions not working correctly, for example as importing logs.  
